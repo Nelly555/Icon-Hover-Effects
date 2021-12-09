@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    font-family: 'Roboto', sans-serif;
+    background: #0a122a;
+    color:#fff;
+}
+.wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , 1%);
+    width: 550px;
+}
+.wrapper ul{
+    list-style: none;
+}
+.wrapper ul li{
+    width: 65px;
+    height: 65px;
+    float: left;
+    margin: 0 15px;
+    border: 5px solid #d8e2dc;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s ease;
+    color:rgb(211, 216, 241)
+}
+.wrapper ul li .ion-icon{
+    color:#d8e2dc;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    font-size: 24px;
+    transition: all 0.5s ease;
+}
+/*facebook*/
+.wrapper ul li:hover.facebook{
+    border: 5px solid #0b59ce;
+    box-shadow: 0 0 15px#1c68db;
+}
+.wrapper ul li:hover .logo-facebook,
+.wrapper.ul li.facebook:hover::before{
+    color: #1c68db;
+    text-shadow: 0 0 15px #1c68db;
+}
+/*twitter*/
+.wrapper ul li:hover.twitter{
+    border:5px solid #4da7ec;
+    box-shadow: 0 0 15px #51a7e9;
+}
+.wrapper ul li:hover .logo-twitter,
+.wrapper.ul li.twitter:hover::before{
+    color: #55acee;
+    text-shadow: 0 0 15px #55acee;
+}
+/*instagram*/
+.wrapper ul li:hover.instagram{
+    border:5px solid #e63556;
+    box-shadow: 0 0 15px #e4405f;
+}
+.wrapper ul li:hover .logo-instagram,
+.wrapper.ul li.instagram:hover::before{ 
+    color: #e4405f;
+    text-shadow: 0 0 15px #e4405f;
+}
+/*google*/
+.wrapper ul li:hover.google{ 
+    border:5px solid #f1621f;
+    box-shadow: 0 0 15px #ec4f06;
+}
+.wrapper ul li:hover .logo-google,
+.wrapper.ul li.google:hover::before{
+    color: #ec4f06;
+    text-shadow: 0 0 15px #ec4f06;
+}
+/*whatsapp*/
+.wrapper ul li:hover.whatsapp{ 
+    border:5px solid #44b89f;
+    box-shadow: 0 0 15px #039777;
+}
+.wrapper ul li:hover .logo-whatsapp,
+.wrapper.ul li.whatsapp:hover::before{
+    color: #039777;
+    text-shadow: 0 0 15px #039777;
+}
+.wrapper ul li::before{
+    position: absolute;
+    bottom: -35px; 
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s ease; 
+}
+.wrapper ul li.facebook::before{
+    content: "Facebook";
+    left:-5px;
+    color:#1c68db;
+}
+.wrapper ul li.twitter:before{
+    content: "Twitter";   
+    left:-1px;
+    color:#4da7ec;
+}
+.wrapper ul li.instagram:before{
+    content: "Instagram";
+    left: -9px;
+    color: #e63556;
+}
+.wrapper ul li.google:before{
+    content: "Google";
+    left: -1px;
+    color:#f1621f;
+}
+.wrapper ul li.whatsapp:before{
+    content: "Whatsapp";
+    left: -9px;
+    color:#44b89f; 
+}
+@media screen and (max-width:620px){
+    .wrapper{
+        width: 150px;
+    }
+}
+
+
+
+
